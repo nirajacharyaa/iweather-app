@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1><i class="fa fa-cloud"></i> iWeather App</h1>
+		</header>
+		<div class="container">
+			<form class="change-location">
+				<label for="city">Enter a location</label>
+				<input type="text" name="city" />
+			</form>
+			<div class="weatherCard d-none">
+				<img src="https://via.placeholder.com/400x300" class="time" />
+				<div class="icon">
+					<img src=""/>
+				</div>
+			</div>
+			<div class="details d-none">
+				<h2 class="city-name">City name</h2>
+				<div class="weather-condition">
+					<h5>Weather condition</h5>
+				</div>
+				<div class="temp">
+					<span>temp</span>
+					<span>&deg;C</span>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>Made with <i class="fa fa-heart"></i> by Niraj</p>
+		</footer>
+
+		<script src="script/weather.js"></script>
+		<script src="script/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+	--blueish: #b191ff;
+	--pinkish: #df99f0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "poppins";
+}
+
+header {
+	height: 5rem;
+	/*width: 100%;*/
+	display: flex;
+	padding: 1rem;
+	background: var(--blueish);
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	/*min-width: 400px;*/
+	max-width: 400px;
+	margin: 2rem auto;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 2px #e3e3e3 solid;
+}
+.weatherCard{
+	margin: 0.75rem 0 0 0;
+}
+.weatherCard img {
+	width: 400px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+input[name="city"] {
+	appearance: none;
+	border: 1px #000 solid;
+	padding: 0.5rem;
+	margin: 0.5rem;
+}
+input[name="city"]:focus {
+	appearance: none;
+	outline: none;
+	border: 1px var(--pinkish) solid;
+	-webkit-box-shadow: inset 0px 1px 5px var(--pinkish);
+	background: transparent;
+}
+.icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon img{
+	width: 80px;
+	margin: 0 auto;
+	padding:0 auto;
+	position: relative;
+	top: -50px;
+	margin-bottom: -40px;
+	background-color: #daddda;
+	border-radius: 50px;
+}
+.weather {
+	margin: 1rem;
+}
+.details {
+	text-align: center;
+}
+.d-none {
+	display: none;
+}
+
+.city-name {
+	text-transform: uppercase;
+}
+.temp {
+	font-size: 3rem;
+	color: #b3b3b3;
+}
+footer {
+	text-align: center;
+	margin: 1rem;
+}
+footer i {
+	color: red;
+}
+@media screen and (max-width: 400px) {
+	.weatherCard img {
+		width: 99%;
+	}
+	.icon img{
+		width: 80px;
+	}
+}
